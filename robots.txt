@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://frejushomes.netlify.app/sitemap.xml
