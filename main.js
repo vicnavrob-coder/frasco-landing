@@ -48,6 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
 
             const formData = new FormData(this);
+            formData.append('form-name', 'contact');
+
             const submitBtn = this.querySelector('button[type="submit"]');
             const originalBtnText = submitBtn.textContent;
 
@@ -66,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     submitBtn.textContent = 'Message Envoyé !';
                     submitBtn.style.background = '#28a745';
                     this.reset();
-                    alert('Merci ! Votre message a été envoyé avec succès. Nous vous contacterons très prochainement.');
+                    alert('Merci ! Votre message a été envoyé avec succès. Nous vous contacteros muy pronto.');
                     setTimeout(() => {
                         submitBtn.textContent = originalBtnText;
                         submitBtn.style.background = '';
